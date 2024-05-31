@@ -1,23 +1,57 @@
 {
-  "Metadata": {
-    "title": "next-intl Beispiel"
+  "defaultMetadata": {
+    "title": "Next js বহু ভাষার অনুশীলন",
+    "description": "এটি Next.js বহু ভাষার অনুশীলনের জন্য ডিফল্ট বর্ণনা।",
+    "keywords": "Next.js, বহু ভাষা, অনুশীলন"
   },
   "Header": {
     "label": "ভাষা নির্বাচন করুন",
-    "Home": "হোম",
-    "About": "সম্পর্কে",
-    "Users": "ব্যবহারকারীরা"
+    "menu": {
+      "Home": "বাড়ি",
+      "About": "সম্পর্কে",
+      "Users": "ব্যবহারকারীরা"
+    }
   },
-  "HomePage": {
-    "title": "হ্যালো ওয়ার্ল্ড"
-  },
-  "AboutPage": {
-    "title": "সম্পর্কে"
-  },
-  "UsersPage": {
-    "title": "ব্যবহারকারীরা"
-  },
-  "SingleUserPage": {
-    "title": "ব্যবহারকারীর বিবরণ"
+  "Pages": {
+    "HomePage": {
+      "title": "হ্যালো বিশ্ব",
+      "metadata": {
+        "title": "Next js বহু ভাষার অনুশীলন - বাড়ি",
+        "description": "আমাদের Next.js বহু ভাষার অনুশীলনের হোম পৃষ্ঠায় স্বাগতম।",
+        "keywords": "Next.js, বাড়ি, বহু ভাষা"
+      }
+    },
+    "AboutPage": {
+      "title": "সম্পর্কে",
+      "metadata": {
+        "title": "Next js বহু ভাষার অনুশীলন - সম্পর্কে",
+        "description": "আমাদের Next.js বহু ভাষার অনুশীলন সম্পর্কে আরও জানুন।",
+        "keywords": "Next.js, সম্পর্কে, বহু ভাষা"
+      }
+    },
+    "UsersPage": {
+      "title": "ব্যবহারকারীরা",
+      "metadata": {
+        "title": "Next js বহু ভাষার অনুশীলন - ব্যবহারকারীরা",
+        "description": "আমাদের Next.js বহু ভাষার অনুশীলনের ব্যবহারকারীদের সাথে পরিচিত হন।",
+        "keywords": "Next.js, ব্যবহারকারীরা, বহু ভাষা"
+      }
+    },
+    "SingleUserPage": {
+      "title": "ব্যবহারকারীর বিস্তারিত",
+      "metadata": {
+        "title": "Next js বহু ভাষার অনুশীলন - ব্যবহারকারীর বিস্তারিত",
+        "description": "আমাদের Next.js বহু ভাষার অনুশীলনের নির্দিষ্ট ব্যবহারকারীর বিস্তারিত।",
+        "keywords": "Next.js, ব্যবহারকারীর বিস্তারিত, বহু ভাষা"
+      }
+    },
+    "NotFoundPage": {
+      "title": "পৃষ্ঠা পাওয়া যায়নি",
+      "metadata": {
+        "title": "Next js বহু ভাষার অনুশীলন - পৃষ্ঠা পাওয়া যায়নি",
+        "description": "এই পৃষ্ঠাটি পাওয়া যায়নি।",
+        "keywords": "Next.js, 404, পাওয়া যায়নি"
+      }
+    }
   }
 }

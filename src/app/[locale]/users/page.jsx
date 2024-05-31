@@ -2,13 +2,16 @@ import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import UsersList from "./users-list";
 import { getUsers } from "@/utils/get-users";
 
-// export async function generateMetadata({ params: { locale } }) {
-//   const t = await getTranslations({ locale, namespace: "Metadata" });
+export async function generateMetadata({ params: { locale } }) {
+  const t = await getTranslations({
+    locale,
+    namespace: "Pages.UsersPage.metadata",
+  });
 
-//   return {
-//     title: t("title"),
-//   };
-// }
+  return {
+    title: t("title"),
+  };
+}
 
 export default async function UsersPage({ params: { locale } }) {
   unstable_setRequestLocale(locale);

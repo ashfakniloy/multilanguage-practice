@@ -1,23 +1,57 @@
 {
-  "Metadata": {
-    "title": "next-intl Beispiel"
+  "defaultMetadata": {
+    "title": "Next js multilanguage practice",
+    "description": "This is the default description for Next.js multilanguage practice.",
+    "keywords": "Next.js, multilanguage, practice"
   },
   "Header": {
     "label": "Select language",
-    "Home": "Home",
-    "About": "About",
-    "Users": "Users"
+    "menu": {
+      "Home": "Home",
+      "About": "About",
+      "Users": "Users"
+    }
   },
-  "HomePage": {
-    "title": "Hello world"
-  },
-  "AboutPage": {
-    "title": "About"
-  },
-  "UsersPage": {
-    "title": "Users"
-  },
-  "SingleUserPage": {
-    "title": "Users Details"
+  "Pages": {
+    "HomePage": {
+      "title": "Hello world",
+      "metadata": {
+        "title": "Next js multilanguage practice - Home",
+        "description": "Welcome to the home page of our Next.js multilanguage practice.",
+        "keywords": "Next.js, home, multilanguage"
+      }
+    },
+    "AboutPage": {
+      "title": "About",
+      "metadata": {
+        "title": "Next js multilanguage practice - About",
+        "description": "Learn more about our Next.js multilanguage practice.",
+        "keywords": "Next.js, about, multilanguage"
+      }
+    },
+    "UsersPage": {
+      "title": "Users",
+      "metadata": {
+        "title": "Next js multilanguage practice - Users",
+        "description": "Meet the users of our Next.js multilanguage practice.",
+        "keywords": "Next.js, users, multilanguage"
+      }
+    },
+    "SingleUserPage": {
+      "title": "User Details",
+      "metadata": {
+        "title": "Next js multilanguage practice - User Details",
+        "description": "Details of a specific user in our Next.js multilanguage practice.",
+        "keywords": "Next.js, user details, multilanguage"
+      }
+    },
+    "NotFoundPage": {
+      "title": "Page not found",
+      "metadata": {
+        "title": "Next js multilanguage practice - Page not found",
+        "description": "This page could not be found.",
+        "keywords": "Next.js, 404, not found"
+      }
+    }
   }
 }

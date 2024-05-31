@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
 export default function UserDetails({ user }) {
-  const t = useTranslations("SingleUserPage");
+  const t = useTranslations("Pages.SingleUserPage");
 
   return (
     <div>

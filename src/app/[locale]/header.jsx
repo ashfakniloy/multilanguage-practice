@@ -2,6 +2,7 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter, Link } from "@/lib/navigation";
+import { languages } from "@/config";
 
 const routes = [
   {
@@ -21,21 +22,14 @@ const routes = [
 export default function Header() {
   const router = useRouter();
   const pathname = usePathname();
-  const localeActive = useLocale();
+  const locale = useLocale();
 
-  // const [locale, setLocale] = useState("");
-
-  // useEffect(() => {
-  //   setLocale(localeActive);
-  // }, [localeActive]);
-
-  console.log("pathname", pathname);
+  // console.log("locale", locale);
 
   const t = useTranslations("Header");
 
   const handleLocaleChange = (e) => {
     const localeValue = e.target.value;
-    // router.replace(`/${localeValue}`);
     router.replace(pathname, { locale: localeValue });
     // router.refresh();
   };
@@ -45,7 +39,7 @@ export default function Header() {
       <div className="space-x-10">
         {routes.map((route, i) => (
           <Link key={route.name} href={route.link}>
-            {t(route.name)}
+            {t(`menu.${route.name}`)}
           </Link>
         ))}
       </div>
@@ -58,12 +52,15 @@ export default function Header() {
         <select
           name="language"
           id="language"
-          defaultValue={localeActive}
+          defaultValue={locale}
           className="bg-stone-700"
           onChange={handleLocaleChange}
         >
-          <option value="en">English</option>
-          <option value="bn">Bangla</option>
+          {languages.map((language) => (
+            <option key={language.name} value={language.locale}>
+              {language.display_name}
+            </option>
+          ))}
         </select>
       </div>
     </div>

@@ -12,4 +12,14 @@ export default getRequestConfig(async ({ locale }) => {
   return {
     messages: (await import(`../messages/${locale}.json`)).default,
   };
+
+  // // for separate files for separate pages and components
+  // const messages = {
+  //   ...(await import(`../messages/${locale}/Header.json`)).default,
+  //   ...(await import(`../messages/${locale}/HomeaPage.json`)).default,
+  // };
+
+  // return {
+  //   messages,
+  // };
 });

@@ -2,7 +2,7 @@ import { Link } from "@/lib/navigation";
 import { useTranslations } from "next-intl";
 
 export default function UsersList({ users }) {
-  const t = useTranslations("UsersPage");
+  const t = useTranslations("Pages.UsersPage");
 
   // console.log("users from server", users);
 
