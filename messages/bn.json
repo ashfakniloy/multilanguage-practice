@@ -1,0 +1,23 @@
+{
+  "Metadata": {
+    "title": "next-intl Beispiel"
+  },
+  "Header": {
+    "label": "ভাষা নির্বাচন করুন",
+    "Home": "হোম",
+    "About": "সম্পর্কে",
+    "Users": "ব্যবহারকারীরা"
+  },
+  "HomePage": {
+    "title": "হ্যালো ওয়ার্ল্ড"
+  },
+  "AboutPage": {
+    "title": "সম্পর্কে"
+  },
+  "UsersPage": {
+    "title": "ব্যবহারকারীরা"
+  },
+  "SingleUserPage": {
+    "title": "ব্যবহারকারীর বিবরণ"
+  }
+}

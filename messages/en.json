@@ -1,0 +1,23 @@
+{
+  "Metadata": {
+    "title": "next-intl Beispiel"
+  },
+  "Header": {
+    "label": "Select language",
+    "Home": "Home",
+    "About": "About",
+    "Users": "Users"
+  },
+  "HomePage": {
+    "title": "Hello world"
+  },
+  "AboutPage": {
+    "title": "About"
+  },
+  "UsersPage": {
+    "title": "Users"
+  },
+  "SingleUserPage": {
+    "title": "Users Details"
+  }
+}
